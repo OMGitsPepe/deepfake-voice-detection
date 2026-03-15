@@ -5,7 +5,6 @@ from sklearn.metrics import roc_curve
 from scipy.optimize import brentq
 from scipy.interpolate import interp1d
 
-
 from crnn_model import DeepfakeCRNN
 from data_handler import ASVSpoof5Dataset, pad_collate_fn
 
@@ -47,8 +46,8 @@ def evaluate_model():
 
     # Using dev set to test on unseen data
     test_dataset = ASVSpoof5Dataset(
-        metadata_path="ASVspoof5/ASVspoof5.dev.tsv",
-        audio_dir="ASVspoof5/flac_D"
+        metadata_path="ASVspoof5/ASVspoof5.eval.track_1.tsv",
+        audio_dir="ASVspoof5/flac_E_eval"
     )
 
     test_loader = DataLoader(

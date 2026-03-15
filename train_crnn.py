@@ -67,7 +67,7 @@ def train_master_pipeline():
     # Dev set
     # Used for validation to test against unseen speakers
     val_dataset = ASVSpoof5Dataset(
-        metadata_path="ASVspoof5/ASVspoof5.dev.tsv",
+        metadata_path="ASVspoof5/ASVspoof5.dev.track_1.tsv",
         audio_dir="ASVspoof5/flac_D"
     )
 
