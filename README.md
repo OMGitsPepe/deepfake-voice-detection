@@ -23,7 +23,7 @@ robust speech separation, and then frozen.
 dynamically using PyTorch's `pack_padded_sequence` to maintain computational efficiency without truncating critical temporal data.
 
 ## Results
-[cite_start]The primary evaluation metric is to achieve a development-set Equal Error Rate (EER) competitive with 
+The primary evaluation metric is to achieve a development-set Equal Error Rate (EER) competitive with 
 published SOTA on ASVspoof 5; current best result: 3.07% EER. The model was evaluated on `ASVspoof5.dev.track_1.tsv` 
 to ensure strict testing against unseen speakers and unknown attack types.
 
